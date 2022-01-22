@@ -1,0 +1,19 @@
+GAME LOOP:
+1) DETERMINE THE NEXT PLAYER
+2) NOTIFIED NEXT PLAYER TO TAKE MOVE
+3) WAIT FOR PLAYER TO TAKE MOVE
+4) PLAYER TAKE MOVE
+5) VALIDATE THE MOVE
+	IF VALID, GO 6
+	ELSE, GO 3
+6) CHECK GAME END CONDITION
+	IF GAME END, GO 7
+	ELSE, GO 1
+7) END GAME, POST GAME RESULT
+
+Tips:
+- Make a thread, do infinite loop by 1 second each time
+- For each time, check the state of the game, do the action required for that state
+	e.g. IF STATE = 1, THEN NEED TO "DETERMINE THE NEXT PLAYER"
+- Those "action" can use Command Design Pattern to encapsulate the actual work
+- A class GameLoop should be defined, and should be part of the controller of MVC
