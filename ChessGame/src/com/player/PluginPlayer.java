@@ -12,7 +12,7 @@ public class PluginPlayer extends ComputerPlayer {
 	@Override
 	protected String calcMove(String board) {
 		// TODO Auto-generated method stub
-		return null;
+		return "";
 	}
 
 }
